@@ -1,3 +1,5 @@
+import javax.print.attribute.HashPrintJobAttributeSet;
+
 public abstract class Monster implements Creature {
     private String name;
     private int hp;
@@ -15,7 +17,7 @@ public abstract class Monster implements Creature {
     }
 
     public  void showStatus() {
-        System.out.println(this.name + "hp:" + hp + " suffix:" + suffix);
+        System.out.println(this.name  + suffix + " HP:" + hp);
 
     }
     public String getName() {
